@@ -15,7 +15,7 @@ E:/Nasa Space Challenge/Project/Space
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49862
+61751
 Successfully changed project path to: E:/Nasa Space Challenge/Project/Space
 E:/Nasa Space Challenge/Project/Space
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ E:/Nasa Space Challenge/Project/Space
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 226.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 377.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.15f1 (42973686a05c)
 [Subsystems] Discovering subsystems at path E:/Unity/2022.1.15f1/Editor/Data/Resources/UnitySubsystems
@@ -68,42 +68,42 @@ Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2022.1.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Unity/2022.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008601 seconds.
+Registered in 0.027979 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 3033.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 299.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 22.426 seconds
+- Completed reload, in  3.788 seconds
 Domain Reload Profiling:
-	ReloadAssembly (22433ms)
-		BeginReloadAssembly (205ms)
+	ReloadAssembly (3790ms)
+		BeginReloadAssembly (504ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (21921ms)
-			LoadAssemblies (205ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2485ms)
+			LoadAssemblies (505ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (949ms)
-				TypeCache.Initialize (936ms)
-					TypeCache.ScanAssembly (905ms)
-				ResolveRequiredComponents (13ms)
+			SetupTypeCache (803ms)
+				TypeCache.Initialize (802ms)
+					TypeCache.ScanAssembly (797ms)
+				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (5214ms)
-			SetupLoadedEditorAssemblies (12624ms)
+			RebuildScriptCaches (123ms)
+			SetupLoadedEditorAssemblies (1359ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (332ms)
-				SetLoadedEditorAssemblies (416ms)
-				RefreshPlugins (3034ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (7223ms)
-				ProcessInitializeOnLoadMethodAttributes (1539ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (39ms)
+				RefreshPlugins (300ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (593ms)
+				ProcessInitializeOnLoadMethodAttributes (386ms)
+				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.204024 seconds.
+Registered in 7.726913 seconds.
