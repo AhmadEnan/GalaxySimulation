@@ -15,7 +15,7 @@ E:/Nasa Space Challenge/Project/Space
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49862
+61751
 Successfully changed project path to: E:/Nasa Space Challenge/Project/Space
 E:/Nasa Space Challenge/Project/Space
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ E:/Nasa Space Challenge/Project/Space
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 1990.85 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1340.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.15f1 (42973686a05c)
 [Subsystems] Discovering subsystems at path E:/Unity/2022.1.15f1/Editor/Data/Resources/UnitySubsystems
@@ -63,4 +63,13 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2022.1.15f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2022.1.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Unity/2022.1.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/2022.1.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Unity/2022.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.065629 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1928.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
