@@ -7,6 +7,11 @@ namespace Lehmer
     {
         // Stores the seed for the Next methods.
         private uint _seed;
+        public uint Seed
+        {
+            get { return _seed; }
+            set { _seed = value; }
+        }
 
         /// <summary>
         /// Initializes a new instance of the Random class, using a time-dependent default seed value.
@@ -111,6 +116,13 @@ namespace Lehmer
         {
             _seed = Rnd(_seed);
             return ConvertToIntRange(_seed, minValue, maxValue);
+        }
+
+        // Returns a random int and sets the seed for the next pass.
+        internal int GetNextInt(uint __seed, int minValue, int maxValue)
+        {
+            _seed = __seed;
+            return ConvertToIntRange(Rnd(_seed), minValue, maxValue);
         }
 
         // Returns a random double and sets the seed for the next pass.
