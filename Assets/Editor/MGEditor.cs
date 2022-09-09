@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(MapDisplay))]
+[CustomEditor(typeof(Generator))]
 public class MGEditor : Editor
 {
-    public override void OnInspectorGUI() 
+    MapDisplay mapDisplay;
+    public override void OnInspectorGUI()
     {
-        MapDisplay md = (MapDisplay)target;
-        if (DrawDefaultInspector()) 
+        if (mapDisplay == null)
+            mapDisplay = GameObject.FindGameObjectWithTag("MapDisplay").GetComponent<MapDisplay>();
+
+        Generator gen = (Generator)target;
+
+        if (DrawDefaultInspector() || GUILayout.Button("Generate")) 
         {
-            md.DrawMap();
+            float[,] map = gen.GetNoiseMap();
+            mapDisplay.DrawMap(map);
         }
-        if (GUILayout.Button("Generate")) 
-        {
-            md.DrawMap();
-        }
+        // if (GUILayout.Button("Generate")) 
+        // {
+        //     float [,] map = gen.GetNoiseMap();
+        //     mapDisplay.DrawMap(map);
+        // }
     }
    
 }
