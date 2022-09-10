@@ -7,64 +7,58 @@ public class MapDisplay : MonoBehaviour
     // Generator g;
 
     [SerializeField]
-    public Renderer DisplayPlane;
+    private Renderer DisplayPlane;
 
-    public int Width = 128;
-    public int Height = 128;
-    public int Seed = 69;
+    // public void DrawNoiseMap(float[,] map)
+    // {
+    //     int width = map.GetLength(0);
+    //     int height = map.GetLength(1);
+    //     
+    //     Texture2D mapTexture = new Texture2D(width, height);
+    // 
+    //     Color[] colorMap = new Color[width * height];
+    // 
+    //     for (int y = 0; y < height; y++) 
+    //     {
+    //         for (int x = 0; x < width; x++) 
+    //         {
+    //             colorMap[y * width + x] = Color.Lerp(Color.black, Color.white, map[x, y]);
+    //         }
+    //     }
+    // 
+    //     mapTexture.SetPixels(colorMap);
+    //     mapTexture.Apply();
+    //     DisplayPlane.sharedMaterial.mainTexture = mapTexture;
+    //     DisplayPlane.transform.localScale = new Vector3(width, 1, height);
+    // }
 
-    Lehmer.Random randNumGen;
-    void DrawNoiseMap()
+    public void DrawMap(float [,] map)
     {
+        int width = map.GetLength(0);
+        int height = map.GetLength(1);
 
-        Texture2D mapTexture = new Texture2D(Width, Height);
-        
-        Color[] colorMap = new Color[Width * Height];
+        Texture2D mapTexture = new Texture2D(width, height);
 
-        for (int y = 0; y < Height; y++) 
+        Color[] colorMap = new Color[width * height];
+
+        for (int y = 0; y < height; y++)
         {
-            for (int x = 0; x < Width; x++) 
+            for (int x = 0; x < width; x++)
             {
-                uint nSeed = (uint)(y << 16 | x) * (uint)(Seed);
-                // Debug.Log("Seed is : " + randNumGen.Seed);
-                // randNumGen.Seed = (uint)Seed;
-                float num = (float)randNumGen.GetNextInt(nSeed, 0, 20);
-                // Color c = num == 0 ? Color.black : Color.white;
-                // colorMap[y * Width + x] = c;
-                colorMap[y * Width + x] = Color.Lerp(Color.white, Color.black, num);
+                colorMap[y * width + x] = Color.Lerp(Color.black, Color.white, map[x, y]);
             }
         }
 
-        // int width = noiseMap.GetLength(0);
-        // int height = noiseMap.GetLength(1);
-        // 
-        // Texture2D tex = new Texture2D(width, height);
-        // 
-        // Color[] colorMap = new Color[width * height];
-        // for (int y = 0; y < height; y++) 
-        // {
-        //     for (int x = 0; x < width; x++) 
-        //     {
-        //         colorMap[y * width + x] = Color.Lerp(Color.black, Color.white, noiseMap[x, y]);
-        //     }
-        // }
-        // 
         mapTexture.SetPixels(colorMap);
         mapTexture.Apply();
         DisplayPlane.sharedMaterial.mainTexture = mapTexture;
-        DisplayPlane.transform.localScale = new Vector3(Width, 1, Height);
+        DisplayPlane.transform.localScale = new Vector3(width, 1, height);
     }
 
-    public void DrawMap()
-    {
-        // float[,] map = g.CreateNoiseMap(Width, Height, scale);
-        DrawNoiseMap();
-    }
-
-    void Start()
+    void Awake()
     {
         // g = GameObject.FindGameObjectWithTag("Generator").GetComponent<Generator>();
-        randNumGen = new Lehmer.Random(Seed);
-        DrawNoiseMap();
+        // randNumGen = new Lehmer.Random(Seed);
+        // DrawNoiseMap();
     }
 }
