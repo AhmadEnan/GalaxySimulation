@@ -7,6 +7,7 @@ using UnityEditor;
 public class MGEditor : Editor
 {
     MapDisplay mapDisplay;
+    bool autoUpdate = true;
     public override void OnInspectorGUI()
     {
         if (mapDisplay == null)
@@ -14,16 +15,13 @@ public class MGEditor : Editor
 
         Generator gen = (Generator)target;
 
-        if (DrawDefaultInspector() || GUILayout.Button("Generate")) 
+        if ((autoUpdate && DrawDefaultInspector()) || (GUILayout.Button("Generate")))
         {
             float[,] map = gen.GetNoiseMap();
             mapDisplay.DrawMap(map);
         }
-        // if (GUILayout.Button("Generate")) 
-        // {
-        //     float [,] map = gen.GetNoiseMap();
-        //     mapDisplay.DrawMap(map);
-        // }
+        
+        autoUpdate = GUILayout.Toggle(autoUpdate, "Auto Update");
     }
    
 }

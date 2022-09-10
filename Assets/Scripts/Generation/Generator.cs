@@ -36,12 +36,7 @@ public class Generator : MonoBehaviour
             for (int x = 0; x < width; x++)
             {
                 uint nSeed = (uint)(y << 16 | x) * (uint)(seed);
-                // Debug.Log("Seed is : " + randNumGen.Seed);
-                // randNumGen.Seed = (uint)Seed;
                 float num = (float)randNumGen.GetNextInt(nSeed, 0, 20);
-                // Color c = num == 0 ? Color.black : Color.white;
-                // colorMap[y * Width + x] = c;
-                // colorMap[y * Width + x] = Color.Lerp(Color.white, Color.black, num);
                 noiseMap[x, y] = num;
             }
         }
@@ -57,11 +52,5 @@ public class Generator : MonoBehaviour
     void Awake()
     {
         randNumGen = new Lehmer.Random(noiseMapSeed);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
