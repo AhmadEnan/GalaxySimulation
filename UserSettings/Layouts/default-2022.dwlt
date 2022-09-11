@@ -20,7 +20,11 @@ MonoBehaviour:
     height: 685
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Project
+=======
+  m_Title: Inspector
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
   m_Title: Inspector
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
@@ -124,7 +128,11 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 99
+=======
+  controlID: 85
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
   controlID: 85
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
@@ -222,15 +230,21 @@ MonoBehaviour:
     x: 241
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 753
     height: 365
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 =======
+=======
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
     width: 837
     height: 490
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
+=======
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
   m_ActualView: {fileID: 12}
   m_Panes:
@@ -262,6 +276,9 @@ MonoBehaviour:
     y: 490
     width: 1110
     height: 145
+<<<<<<< HEAD
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
+=======
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -604,6 +621,7 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.087413326, y: 0.8998316, z: -0.21193305, w: -0.3711421}
     speed: 2
     m_Value: {x: -0.087413326, y: 0.8998316, z: -0.21193305, w: -0.3711421}
@@ -611,6 +629,15 @@ MonoBehaviour:
     m_Target: 56.188557
     speed: 2
     m_Value: 56.188557
+=======
+    m_Target: {x: -0.5186208, y: -0.01974087, z: 0.011978265, w: -0.8546932}
+    speed: 2
+    m_Value: {x: -0.51862055, y: -0.01974086, z: 0.011978259, w: -0.85469276}
+  m_Size:
+    m_Target: 1713.3209
+    speed: 2
+    m_Value: 1713.3209
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
     m_Target: {x: -0.5186208, y: -0.01974087, z: 0.011978265, w: -0.8546932}
     speed: 2
@@ -676,10 +703,13 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 98c3ffffd0f9ffff36fbffff
 =======
+=======
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
       m_SelectedIDs: 3c590000
       m_LastClickedID: 22844
       m_ExpandedIDs: 34fbffff
@@ -828,9 +858,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 438
     width: 993
     height: 249
+=======
+    y: 563
+    width: 1109
+    height: 124
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
     y: 563
     width: 1109
@@ -854,7 +890,11 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/textures
+=======
+    - Assets
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
     - Assets
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
@@ -864,7 +904,11 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/textures
+=======
+  - Assets
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
   - Assets
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
@@ -875,9 +919,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 82590000
     m_LastClickedID: 22914
     m_ExpandedIDs: 000000007059000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 6c590000
+    m_LastClickedID: 22892
+    m_ExpandedIDs: 000000006c5900007c59000000ca9a3bffffff7f
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
     m_SelectedIDs: 6c590000
     m_LastClickedID: 22892
@@ -911,7 +961,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000070590000
+=======
+    m_ExpandedIDs: 000000006c590000
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
     m_ExpandedIDs: 000000006c590000
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
@@ -1034,7 +1088,11 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastVerticalScrollValue: 50
+=======
+  m_LastVerticalScrollValue: 0
+>>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
 =======
   m_LastVerticalScrollValue: 0
 >>>>>>> fa50b79faf2a700ddf9a81f3fd31ee2fb55e52eb
