@@ -11,6 +11,7 @@
 [Uu]nityGenerated/
 # file on crash reports
 sysinfo.txt
+[Uu]serSettings/Layouts/
 # Unity3D generated meta files
 *.pidb.meta
 
